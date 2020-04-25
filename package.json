@@ -1,0 +1,16 @@
+{
+  "name": "website",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "deploy": "gh-pages -d dist"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "homepage": "https://rgatchel.github.io/90-s_Gamer_Girl_Creations",
+  "dependencies": {
+    "gh-pages": "^2.2.0"
+  }
+}
