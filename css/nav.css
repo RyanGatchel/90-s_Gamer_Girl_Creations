@@ -1,13 +1,13 @@
 /* Header Start */
 #header_logo {
-	width:5em;
-	height:5en;
+	width:5em !important;
+	height:5em !important;
 }
 
-#shopping_cart{
-	width:2en;
-	height:2em;
-	margin:1em;
+#shopping_cart {
+	width:2em !important;
+	height:2em !important;
+	margin:1em !important;
 }
 
 .header {
