@@ -181,11 +181,11 @@ ps. all cups created have my personal logo at the bottom used as my signature fo
 
 <div class="row">
 <div id="email" class="container-fluid col-lg-12 email">
-	<form method="POST" action="http://formspree.io/90sgamergirlcreations@gmail.com">
+	<form method="POST" action="http://formspree.io/rgatchel94@gmail.com">
 		
 		<div class="form-group">
-			<label for="email">Name: </label>
-			<input type="email" class="form-control" name="name" id="name" placeholder="Your name">
+			<label for="name">Name: </label>
+			<input type="name" class="form-control" name="name" id="name" placeholder="Your name">
 		</div>
 		
 		<div class="form-group">
@@ -194,8 +194,40 @@ ps. all cups created have my personal logo at the bottom used as my signature fo
 		</div>
 		
 		<div class="form-group">
-			<label for="phone">Phone Number: </label>
-			<input type="phone" class="form-control" name="phone" placeholder="Your phone number">
+			<label for="size">Tumbler Size: </label>
+			<select name="size" id="size" required="">
+				<option value="20oz Skinny" selected="">20oz Skinny</option>
+				<option value="22oz Fatty">22oz Fatty</option>
+				<option value="30oz Curve">30oz Curve</option>
+				<option value="17oz Mason">17oz Mason</option>
+				<option value="20oz Fatty">20oz Fatty</option>
+				<option value="14oz">14oz</option>
+				<option value="12oz">12oz</option>
+				<option value="14oz">14oz</option>
+				<option value="9oz">9oz</option>
+				<option value="18oz">18oz</option>
+				<option value="30oz Skinny">30oz Skinny</option>
+				<option value="12oz">12oz</option>
+			</select>
+		</div>
+		
+		<div class="form-group">
+			<label for="size">Glitter: </label>
+			<select name="glitter" id="glitter" required="">
+				<option value="glitter" selected="">Glitter</option>
+				<option value="background">Background</option>
+				<option value="Neither">Neither</option>
+			</select>
+		</div>
+		
+		<div class="form-group">
+			<label for="background">If background is selected upload background image: </label>
+			<input type="file" class="form-control" name="upload" id="name" placeholder="phrase/name on tumbler">
+		</div>
+		
+		<div class="form-group">
+			<label for="phrase">Phrase/Name: </label>
+			<input type="phrase_name" class="form-control" name="phrase_name" id="name" placeholder="phrase/name on tumbler">
 		</div>
 		
 		<div class="form-group">
