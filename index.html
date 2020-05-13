@@ -181,22 +181,73 @@ ps. all cups created have my personal logo at the bottom used as my signature fo
 
 <div class="row">
 <div id="email" class="container-fluid col-lg-12 email">
+	<form method="POST" action="http://formspree.io/rgatchel94@gmail.com">
+		
 <form
-  action="https://formspree.io/rgatchel94@gmail.com"
+  action="https://formspree.io/xknqgkky"
   method="POST"
   enctype="multipart/form-data"
 >
-  <label>
-    Your email:
-    <input type="text" name="_replyto">
-  </label>
-  <label>
-    Your file:
-    <input type="file" name="upload">
-  </label>
-
-  <button type="submit">Send</button>
-</form>
+ <div class="form-group">
+			<label for="name">Name: </label>
+			<input type="name" class="form-control" name="name" id="name" placeholder="Your name">
+		</div>
+		
+		<div class="form-group">
+			<label for="email">Email: </label>
+			<input type="email" class="form-control" name="email" id="email" placeholder="Your email">
+		</div>
+		
+		<div class="form-group">
+			<label for="size">Tumbler Size: </label>
+			<select name="size" id="size" required="">
+				<option value="20oz Skinny" selected="">20oz Skinny</option>
+				<option value="22oz Fatty">22oz Fatty</option>
+				<option value="30oz Curve">30oz Curve</option>
+				<option value="17oz Mason">17oz Mason</option>
+				<option value="20oz Fatty">20oz Fatty</option>
+				<option value="14oz">14oz</option>
+				<option value="12oz">12oz</option>
+				<option value="14oz">14oz</option>
+				<option value="9oz">9oz</option>
+				<option value="18oz">18oz</option>
+				<option value="30oz Skinny">30oz Skinny</option>
+				<option value="12oz">12oz</option>
+			</select>
+		</div>
+		
+		<div class="form-group">
+			<label for="size">Glitter: </label>
+			<select name="glitter" id="glitter" required="">
+				<option value="glitter" selected="">Glitter</option>
+				<option value="background">Background</option>
+				<option value="Neither">Neither</option>
+			</select>
+		</div>
+		
+		<div class="form-group">
+			<label for="background">If background is selected upload background image: </label>
+			<input type="file" class="form-control" name="upload" id="name" placeholder="phrase/name on tumbler">
+		</div>
+		
+		<div class="form-group">
+			<label for="phrase">Phrase/Name: </label>
+			<input type="phrase_name" class="form-control" name="phrase_name" id="name" placeholder="phrase/name on tumbler">
+		</div>
+		
+		<div class="form-group">
+			<label for="comment">Message</label>
+			<textarea class="form-control" name="message" placeholder="Your message"></textarea>
+		</div>
+		
+		<div class="form-group">
+			<label for="newsletter">Send me future newsletters :
+			<input type="checkbox" name="newsletter" value="newsletter"></label>
+			<p id="promise"> *your email will not be shared with 3rd parties* </p>
+		</div>
+		
+			<button type="submit" class="btn btn-default">Submit</button>
+	</form>
 </div>
 </div>
 
