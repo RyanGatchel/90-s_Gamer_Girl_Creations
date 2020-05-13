@@ -194,6 +194,43 @@ ps. all cups created have my personal logo at the bottom used as my signature fo
 		</div>
 		
 		<div class="form-group">
+			<label for="size">Tumbler Size: </label>
+			<select name="size" id="size" required="">
+				<option value="20oz Skinny" selected="">20oz Skinny</option>
+				<option value="22oz Fatty">22oz Fatty</option>
+				<option value="30oz Curve">30oz Curve</option>
+				<option value="17oz Mason">17oz Mason</option>
+				<option value="20oz Fatty">20oz Fatty</option>
+				<option value="14oz">14oz</option>
+				<option value="12oz">12oz</option>
+				<option value="14oz">14oz</option>
+				<option value="9oz">9oz</option>
+				<option value="18oz">18oz</option>
+				<option value="30oz Skinny">30oz Skinny</option>
+				<option value="12oz">12oz</option>
+			</select>
+		</div>
+		
+		<div class="form-group">
+			<label for="size">Glitter: </label>
+			<select name="glitter" id="glitter" required="">
+				<option value="glitter" selected="">Glitter</option>
+				<option value="background">Background</option>
+				<option value="Neither">Neither</option>
+			</select>
+		</div>
+		
+		<div class="form-group">
+			<label for="background">If background is selected upload background image: </label>
+			<input type="file" class="form-control" name="upload" id="name" placeholder="phrase/name on tumbler">
+		</div>
+		
+		<div class="form-group">
+			<label for="phrase">Phrase/Name: </label>
+			<input type="phrase_name" class="form-control" name="phrase_name" id="name" placeholder="phrase/name on tumbler">
+		</div>
+		
+		<div class="form-group">
 			<label for="comment">Message</label>
 			<textarea class="form-control" name="message" placeholder="Your message"></textarea>
 		</div>
