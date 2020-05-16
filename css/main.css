@@ -24,7 +24,7 @@ body {
 }
 
 .about{
-	padding:10% !important;
+	padding:5% 0 0 0 !important;
 	/* need to add more style */
 }
 
@@ -56,6 +56,7 @@ label {
 	color:white;
 	text-decoration:none;
 }
+
 .contact a:active{
 	color:#0c271e;
 }
