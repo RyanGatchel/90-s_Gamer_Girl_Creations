@@ -21,6 +21,7 @@
 	<link rel="stylesheet" href="css/nav.css" type="text/css">
 	<link rel="stylesheet" href="css/slides.css" type="text/css">
 	<link rel="stylesheet" href="css/gallery.css" type="text/css">
+	<link rel="stylesheet" href="css/modal.css" type="text/css">
 	<script src="js/Scroll.js"></script>
 </head>
   
@@ -185,8 +186,130 @@ ps. all cups created have my personal logo at the bottom used as my signature fo
 </div>
 </div>
 
+<div id="myModal" class="modal">
+
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    
+	<div class="container">
+
+  <div class="mySlides">
+    <div class="numbertext">1 / 12</div>
+      <img src="img/cups.jpg" id="modal_img" style="width:100%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">2 / 12</div>
+      <img src="img/blue_g.jpg" id="modal_img" style="width:100%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">3 / 12</div>
+      <img src="img/dark-g.jpg" id="modal_img" style="width:100%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">4 / 12</div>
+      <img src="img/dark-pink-g.jpg" id="modal_img" style="width:100%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">5 / 12</div>
+      <img src="img/peach-g.jpg" id="modal_img" style="width:100%">
+  </div>
+  
+  <div class="mySlides">
+    <div class="numbertext">6 / 12</div>
+      <img src="img/pink-g.jpg" id="modal_img" style="width:100%">
+  </div>
+  
+  <div class="mySlides">
+    <div class="numbertext">7 / 12</div>
+      <img src="img/rb.jpg" id="modal_img" style="width:100%">
+  </div>
+  
+  <div class="mySlides">
+    <div class="numbertext">8 / 12</div>
+      <img src="img/red-g.jpg" id="modal_img" style="width:100%">
+  </div>
+  
+  <div class="mySlides">
+    <div class="numbertext">9 / 12</div>
+      <img src="img/silver-g.jpg" id="modal_img" style="width:100%">
+  </div>
+  
+  <div class="mySlides">
+    <div class="numbertext">10 / 12</div>
+      <img src="img/soft-g.jpg" id="modal_img" style="width:100%">
+  </div>
+  
+   <div class="mySlides">
+    <div class="numbertext">11 / 12</div>
+      <img src="img/white_g.jpg" id="modal_img" style="width:100%">
+  </div>
+  
+   <div class="mySlides">
+    <div class="numbertext">12 / 12</div>
+      <img src="img/yellow-g.jpg" id="modal_img" style="width:100%">
+  </div>
+
+  <!-- Next and previous buttons -->
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+  <!-- Image text -->
+  <div class="caption-container">
+    <p id="caption"></p>
+  </div>
+
+  <!-- Thumbnail images -->
+  <div class="row">
+    <div class="column">
+      <img class="demo cursor" src="img/cups.jpg" id="thumb_img" style="width:100%" onclick="currentSlide(1)" alt="cup sizes">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="img/blue_g.jpg" id="thumb_img" style="width:100%" onclick="currentSlide(2)" alt="blue shades of glitter">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="img/dark-g.jpg" id="thumb_img" style="width:100%" onclick="currentSlide(3)" alt="dark shades of glitter">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="img/dark-pink-g.jpg" id="thumb_img" style="width:100%" onclick="currentSlide(4)" alt="dark pink shades of glitter">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="img/peach-g.jpg" id="thumb_img" style="width:100%" onclick="currentSlide(5)" alt="peach shades of glitter">
+    </div>
+	<div class="column">
+      <img class="demo cursor" src="img/pink-g.jpg" id="thumb_img" style="width:100%" onclick="currentSlide(6)" alt="pink shades of glitter">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="img/rb.jpg" id="thumb_img" style="width:100%" onclick="currentSlide(7)" alt="Purple, blue shades of glitter">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="img/red-g.jpg" id="thumb_img" style="width:100%" onclick="currentSlide(8)" alt="Red shades of glitter">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="img/silver-g.jpg" id="thumb_img" style="width:100%" onclick="currentSlide(9)" alt="Silver shades of glitter">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="img/soft-g.jpg" id="thumb_img" style="width:100%" onclick="currentSlide(10)" alt="Mixed Glitter">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="img/white_g.jpg" id="thumb_img" style="width:100%" onclick="currentSlide(11)" alt="White colored glitter">
+    </div>
+	<div class="column">
+      <img class="demo cursor" src="img/yellow-g.jpg" id="thumb_img" style="width:100%" onclick="currentSlide(12)" alt="Yellow shades of glitter">
+    </div>
+  </div>
+</div>
+	
+  </div>
+</div>
+
 <div class="color-padding" id="contact">
 </div>
+
+<center><button id="theBtn">sizes/glitter styles</button></center>
 
 <div class="row">
 <div id="email" class="container-fluid col-lg-12 email">
@@ -317,9 +440,9 @@ function showSlides(n) {
   var i;
   var slides = document.getElementsByClassName("mySlides");
   var dots = document.getElementsByClassName("dot");
-  if (n > slides.length) {slideIndex = 1}
   if (n < 1) {slideIndex = slides.length}
   for (i = 0; i < slides.length; i++) {
+  if (n > slides.length) {slideIndex = 1}
       slides[i].style.display = "none";
   }
   for (i = 0; i < dots.length; i++) {
@@ -331,4 +454,5 @@ function showSlides(n) {
 </script>
   
   </body>
+  <script src="js/Modal.js"></script>
 </html>
