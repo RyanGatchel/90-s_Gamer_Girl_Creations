@@ -29,7 +29,8 @@ body {
 }
 
 .about p{
-	font-size:12px;
+	font-size:18px;
+	padding:5%;
 }
 
 label {
